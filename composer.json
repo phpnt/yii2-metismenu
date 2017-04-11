@@ -1,0 +1,30 @@
+{
+    "name": "phpnt/yii2-metismenu",
+    "description": "Yii2 Metis Menu",
+    "keywords": ["yii2", "phpnt", "metismenu", "metis-menu"],
+    "type": "yii2-extension",
+    "license": "MIT",
+    "minimum-stability" : "dev",
+    "prefer-stable": true,
+    "support": {
+        "source": "https://github.com/phpnt/yii2-metismenu"
+    },
+    "authors": [
+        {
+            "name": "phpNT",
+            "email": "phpnt@phpnt.com",
+            "homepage": "http://phpnt.com"
+        }
+    ],
+    "require": {
+        "php": ">=5.4.0",
+        "yiisoft/yii2": "*",
+        "phpnt/animate-css": "*",
+        "bower-asset/metisMenu": "*"
+    },
+    "autoload": {
+        "psr-4": {
+            "phpnt\\metismenu\\": ""
+        }
+    }
+}
