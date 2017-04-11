@@ -19,7 +19,7 @@ class MetisMenuCssAsset extends AssetBundle
     /**
      * @inherit
      */
-    public $sourcePath = '@common/widgets/MetisMenu';
+    public $sourcePath = '@phpnt/metismenu';
 
     /**
      * @inherit
