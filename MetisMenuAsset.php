@@ -8,6 +8,7 @@
 
 namespace phpnt\metismenu;
 
+use Yii;
 use yii\web\AssetBundle;
 
 /**
@@ -34,11 +35,6 @@ class MetisMenuAsset extends AssetBundle
         'dist/metisMenu.min.js'
     ];
 
-
-    public $depends = [
-        'phpnt\metismenu\MetisMenuCssAsset',
-    ];
-
     public function init()
     {
         $this->registerJs();
@@ -48,9 +44,9 @@ class MetisMenuAsset extends AssetBundle
     protected function registerJs()
     {
     $js = <<<JS
-        $('#side-menu').metisMenu();
+        $('.side-menu').metisMenu();
 JS;
-        \Yii::$app->view->registerJs($js);
+        Yii::$app->view->registerJs($js);
         return $this;
     }
 }
